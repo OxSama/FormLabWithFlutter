@@ -51,6 +51,16 @@ class _HomeState extends State<Home> {
                   "Welcomed !",
                   style: TextStyle(fontSize: 30, color: Color(0xFF363f93)),
                 ),
+                SizedBox(
+                  height: height * 0.05,
+                ),
+                TextFormField(
+                  decoration: const InputDecoration(
+                    labelText: "Enter Your Name",
+                  ),
+                  validator: (value) {
+                  },
+                ),
               ],
             ),
           ),

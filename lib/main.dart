@@ -92,6 +92,13 @@ class _HomeState extends State<Home> {
                     labelText: "Enter Your Email",
                   ),
                   validator: (value) {
+                    if (value!.isEmpty ||
+                        !RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}')
+                            .hasMatch(value!)) {
+                      return "Enter your email properly";
+                    } else {
+                      return null;
+                    }
                   },
                 ),
               ],

@@ -61,6 +61,26 @@ class _HomeState extends State<Home> {
                   validator: (value) {
                   },
                 ),
+                SizedBox(
+                  height: height * 0.05,
+                ),
+                TextFormField(
+                  decoration: const InputDecoration(
+                    labelText: "Enter Your Phone",
+                  ),
+                  validator: (value) {
+                  },
+                ),
+                SizedBox(
+                  height: height * 0.05,
+                ),
+                TextFormField(
+                  decoration: const InputDecoration(
+                    labelText: "Enter Your Email",
+                  ),
+                  validator: (value) {
+                  },
+                ),
               ],
             ),
           ),

@@ -59,6 +59,12 @@ class _HomeState extends State<Home> {
                     labelText: "Enter Your Name",
                   ),
                   validator: (value) {
+                    if (value!.isEmpty ||
+                        !RegExp(r'^[a-z A-Z]+$').hasMatch(value!)) {
+                      return "Enter your name properly";
+                    } else {
+                      return null;
+                    }
                   },
                 ),
                 SizedBox(

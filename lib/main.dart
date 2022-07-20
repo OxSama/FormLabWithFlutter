@@ -43,11 +43,11 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(height: height * 0.04),
-                Text(
+                const Text(
                   "Here to Get",
                   style: TextStyle(fontSize: 30, color: Color(0xFF363f93)),
                 ),
-                Text(
+                const Text(
                   "Welcomed !",
                   style: TextStyle(fontSize: 30, color: Color(0xFF363f93)),
                 ),

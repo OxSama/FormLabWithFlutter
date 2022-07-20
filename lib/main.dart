@@ -75,6 +75,13 @@ class _HomeState extends State<Home> {
                     labelText: "Enter Your Phone",
                   ),
                   validator: (value) {
+                    if (value!.isEmpty ||
+                        !RegExp(r'^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]+$')
+                            .hasMatch(value!)) {
+                      return "Enter your phone properly.";
+                    } else {
+                      return null;
+                    }
                   },
                 ),
                 SizedBox(

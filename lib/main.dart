@@ -32,6 +32,7 @@ class _HomeState extends State<Home> {
         key: _scaffoldKey,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
+          title: Text("Here"),
           elevation: 0,
         ),
         backgroundColor: Color(0xFFffffff),
